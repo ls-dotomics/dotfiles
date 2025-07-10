@@ -1,0 +1,5 @@
+[user]
+	name = ls-dotomics
+	email = leonard@dotomics.bio
+[init]
+	defaultBranch = main
