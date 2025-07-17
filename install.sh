@@ -1,0 +1,32 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "🚀 Starting dotfiles setup..."
+
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+INSTALL_DIR="$SCRIPT_DIR/install"
+
+# Make all install scripts executable
+chmod +x "$INSTALL_DIR"/*.sh
+
+echo "📦 Step 1/6: Installing Homebrew..."
+bash "$INSTALL_DIR/01_install_homebrew.sh"
+
+echo "🍺 Step 2/6: Installing Homebrew packages..."
+bash "$INSTALL_DIR/02_install_brew_formulae_and_casks.sh"
+
+echo "🛠️  Step 3/6: Installing utilities..."
+bash "$INSTALL_DIR/03_install_utils.sh"
+
+echo "🔗 Step 4/6: Setting up dotfiles symlinks..."
+bash "$INSTALL_DIR/04_dotfiles_setup.sh"
+
+echo "👤 Step 5/6: Configuring Git..."
+bash "$INSTALL_DIR/05_git_setup.sh"
+
+echo "🐍 Step 6/6: Setting up Python with uv..."
+bash "$INSTALL_DIR/06_uv_setup.sh"
+
+echo "🎉 Dotfiles setup complete!"
+echo "Please restart your terminal or run 'source ~/.bash_profile' to apply changes."
