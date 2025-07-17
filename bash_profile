@@ -1,5 +1,4 @@
 export PATH="/opt/homebrew/bin:$HOME/.local/bin:$PATH"
-# export PATH="/Users/lstrouk/code/moiai/:$PATH"
 
 export LANG=en_US.UTF-8
 hash -r

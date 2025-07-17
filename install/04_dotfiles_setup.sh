@@ -12,6 +12,6 @@ ln -sf "$DOTFILES_DIR/bash_profile" ~/.bash_profile
 ln -sf "$DOTFILES_DIR/bashrc" ~/.bashrc
 ln -sf "$DOTFILES_DIR/bash_aliases" ~/.bash_aliases
 ln -sf "$DOTFILES_DIR/blerc" ~/.blerc
-ln -sf "$DOTFILES_DIR/gitconfig" ~/.gitconfig
+# ln -sf "$DOTFILES_DIR/gitconfig" ~/.gitconfig
 
 echo "✅ Dotfiles symlinks created successfully!"
