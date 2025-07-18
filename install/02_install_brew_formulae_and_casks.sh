@@ -36,11 +36,12 @@ brew install --cask google-drive                # Google Drive - Cloud storage
 brew install --cask microsoft-office            # Microsoft Office - Office suite
 brew install --cask microsoft-auto-update       # Microsoft Auto Update - Auto update for Microsoft apps
 brew install --cask onedrive                    # OneDrive - Cloud storage
+brew install --cask zotero                      # Zotero - Reference manager
 brew install --cask discord                     # Discord - Chat app
 brew install --cask granola                     # Granola - AI Notetaking
 brew install --cask claude                      # Claude - AI chatbot
 brew install --cask chatgpt                     # ChatGPT - AI chatbot
-brew install --cask loom                        # Loom - Video recording
+# brew install --cask loom                        # Loom - Video recording
 
 # Personal Preferences
 brew install --cask spotify                     # Spotify - Music streaming
@@ -57,12 +58,14 @@ brew install tree
 brew install ncdu
 brew install xz
 brew install readline
-brew install make
+# brew install make # installed by gawk
 brew install gawk
 brew install starship
 brew install tmux
 brew install neofetch
 brew install htop
+brew install npm
+brew install inetutils
 
 # Update and Upgrade -------------------------------------------------------------
 brew update
