@@ -10,23 +10,26 @@ INSTALL_DIR="$SCRIPT_DIR/macos-install"
 # Make all install scripts executable
 chmod +x "$INSTALL_DIR"/*.sh
 
-echo "📦 Step 1/6: Installing Homebrew..."
+echo "📦 Step 1/7: Installing Homebrew..."
 bash "$INSTALL_DIR/01_install_homebrew.sh"
 
-echo "🍺 Step 2/6: Installing Homebrew packages..."
+echo "🍺 Step 2/7: Installing Homebrew packages..."
 bash "$INSTALL_DIR/02_install_brew_formulae_and_casks.sh"
 
-echo "🛠️  Step 3/6: Installing utilities..."
+echo "🛠️  Step 3/7: Installing utilities..."
 bash "$INSTALL_DIR/03_install_utils.sh"
 
-echo "🔗 Step 4/6: Setting up dotfiles symlinks..."
+echo "🔗 Step 4/7: Setting up dotfiles symlinks..."
 bash "$INSTALL_DIR/04_dotfiles_setup.sh"
 
-echo "👤 Step 5/6: Configuring Git..."
+echo "👤 Step 5/7: Configuring Git..."
 bash "$INSTALL_DIR/05_git_setup.sh"
 
-echo "🐍 Step 6/6: Setting up Python with uv..."
+echo "🐍 Step 6/7: Setting up Python with uv..."
 bash "$INSTALL_DIR/06_uv_setup.sh"
+
+echo "🐍 Step 7/7: Setting up Startship..."
+bash "$INSTALL_DIR/07_startship_setup.sh"
 
 echo "🎉 Dotfiles setup complete!"
 echo "Please restart your terminal or run 'source ~/.bash_profile' to apply changes."
