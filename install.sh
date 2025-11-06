@@ -5,7 +5,7 @@ echo "🚀 Starting dotfiles setup..."
 
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-INSTALL_DIR="$SCRIPT_DIR/install"
+INSTALL_DIR="$SCRIPT_DIR/macos-install"
 
 # Make all install scripts executable
 chmod +x "$INSTALL_DIR"/*.sh

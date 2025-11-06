@@ -18,10 +18,10 @@ brew install --cask google-chrome
 brew install --cask appcleaner                  # App Cleaner - Apps Uninstaller
 brew install --cask lulu                        # Lulu - Network traffic monitor
 brew install --cask xquartz                     # XQuartz - X11 server for macOS
-brew install --cask raycast                     # Raycast - Spotlight alternative
-brew install --cask maccy                       # Maccy - Clipboard manager
 brew install --cask ghostty                     # Ghostty - Better Terminal
-brew install --cask monitorcontrol              # MonitorControl - Internal / External Monitor brightness and volume control
+brew install --cask betterdisplay               # BetterDisplay - Internal / External Monitor brightness and volume control
+brew install --cask alt-tab                     # Alt-Tab - Window switcher
+
 
 # Code 
 brew install --cask visual-studio-code
@@ -36,16 +36,26 @@ brew install --cask google-drive                # Google Drive - Cloud storage
 brew install --cask microsoft-office            # Microsoft Office - Office suite
 brew install --cask microsoft-auto-update       # Microsoft Auto Update - Auto update for Microsoft apps
 brew install --cask onedrive                    # OneDrive - Cloud storage
-brew install --cask zotero                      # Zotero - Reference manager
 brew install --cask discord                     # Discord - Chat app
 brew install --cask granola                     # Granola - AI Notetaking
 brew install --cask claude                      # Claude - AI chatbot
 brew install --cask chatgpt                     # ChatGPT - AI chatbot
-# brew install --cask loom                        # Loom - Video recording
+brew install --cask loom                        # Loom - Video recording
 
 # Personal Preferences
 brew install --cask spotify                     # Spotify - Music streaming
 brew install --cask whatsapp                    # WhatsApp - Chat app
+
+
+# Discontinued Casks -------------------------------------------------------------
+
+# Utilities
+# --- Discontinued in favor of betterdisplay ---
+# brew install --cask monitorcontrol              # MonitorControl - Internal / External Monitor brightness and volume control
+
+# --- Discontinued because of macos tahoe spotlight improvements ---
+# brew install --cask raycast                     # Raycast - Spotlight alternative                                             
+# brew install --cask maccy                       # Maccy - Clipboard manager 
 
 # Install Formulae -------------------------------------------------------------
 brew install git
@@ -58,7 +68,6 @@ brew install tree
 brew install ncdu
 brew install xz
 brew install readline
-# brew install make # installed by gawk
 brew install gawk
 brew install starship
 brew install tmux
@@ -66,6 +75,8 @@ brew install neofetch
 brew install htop
 brew install npm
 brew install inetutils
+
+# brew install make # installed by gawk
 
 # Update and Upgrade -------------------------------------------------------------
 brew update
