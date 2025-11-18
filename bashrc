@@ -43,3 +43,10 @@ fi
 if [ -f "$HOME/.bash_functions" ]; then
   source "$HOME/.bash_functions"  
 fi
+
+
+# downloaded datasets and dataformat ncbi cli utilities
+# from https://github.com/ncbi/datasets/releases
+# created user bin directory and added to PATH
+# removed from quarantine using xattr -d com.apple.quarantine datasets dataformat
+export PATH="$HOME/bin:$PATH"
