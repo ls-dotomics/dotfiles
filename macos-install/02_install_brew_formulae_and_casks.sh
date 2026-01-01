@@ -21,17 +21,19 @@ brew install --cask xquartz                     # XQuartz - X11 server for macOS
 brew install --cask ghostty                     # Ghostty - Better Terminal
 brew install --cask betterdisplay               # BetterDisplay - Internal / External Monitor brightness and volume control
 brew install --cask alt-tab                     # Alt-Tab - Window switcher
-
+brew install --cask jordanbaird-ice             # Open Source Version of Bartender - for menu bar item management
 
 # Code 
 brew install --cask visual-studio-code
 brew install --cask cursor
+brew install --cask gcloud-cli
 brew install --cask google-cloud-sdk
+brew install --cask r-app
+brew install --cask rstudio 
 
 # Productivity
 brew install --cask 1password                   # 1Password - Password manager
 brew install --cask notion                      # Notion - Note-taking app
-brew install --cask obsidian                    # Obsidian - Note-taking app
 brew install --cask google-drive                # Google Drive - Cloud storage
 brew install --cask microsoft-office            # Microsoft Office - Office suite
 brew install --cask microsoft-auto-update       # Microsoft Auto Update - Auto update for Microsoft apps
@@ -41,6 +43,8 @@ brew install --cask granola                     # Granola - AI Notetaking
 brew install --cask claude                      # Claude - AI chatbot
 brew install --cask chatgpt                     # ChatGPT - AI chatbot
 brew install --cask loom                        # Loom - Video recording
+brew install --cask nordvpn                     # NordVPN - VPN service
+brew install --cask zotero                     # Zotero - Reference manager
 
 # Personal Preferences
 brew install --cask spotify                     # Spotify - Music streaming
@@ -48,6 +52,10 @@ brew install --cask whatsapp                    # WhatsApp - Chat app
 
 
 # Discontinued Casks -------------------------------------------------------------
+
+# Productivity 
+# -- Not using it anymore ---
+# brew install --cask obsidian                    # Obsidian - Note-taking app
 
 # Utilities
 # --- Discontinued in favor of betterdisplay ---
