@@ -37,12 +37,12 @@ brew install --cask notion                      # Notion - Note-taking app
 brew install --cask google-drive                # Google Drive - Cloud storage
 brew install --cask microsoft-office            # Microsoft Office - Office suite
 brew install --cask microsoft-auto-update       # Microsoft Auto Update - Auto update for Microsoft apps
-brew install --cask onedrive                    # OneDrive - Cloud storage
+# brew install --cask onedrive                    # OneDrive - Cloud storage
 brew install --cask discord                     # Discord - Chat app
 brew install --cask granola                     # Granola - AI Notetaking
 brew install --cask claude                      # Claude - AI chatbot
 brew install --cask chatgpt                     # ChatGPT - AI chatbot
-brew install --cask loom                        # Loom - Video recording
+# brew install --cask loom                        # Loom - Video recording
 brew install --cask nordvpn                     # NordVPN - VPN service
 brew install --cask zotero                     # Zotero - Reference manager
 
