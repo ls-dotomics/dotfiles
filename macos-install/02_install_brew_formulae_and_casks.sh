@@ -28,8 +28,8 @@ brew install --cask visual-studio-code
 brew install --cask cursor
 brew install --cask gcloud-cli
 brew install --cask google-cloud-sdk
-brew install --cask r-app
-brew install --cask rstudio 
+# brew install --cask r-app
+# brew install --cask rstudio 
 
 # Productivity
 brew install --cask 1password                   # 1Password - Password manager
@@ -44,7 +44,7 @@ brew install --cask claude                      # Claude - AI chatbot
 brew install --cask chatgpt                     # ChatGPT - AI chatbot
 # brew install --cask loom                        # Loom - Video recording
 brew install --cask nordvpn                     # NordVPN - VPN service
-brew install --cask zotero                     # Zotero - Reference manager
+brew install --cask zotero                      # Zotero - Reference manager
 
 # Personal Preferences
 brew install --cask spotify                     # Spotify - Music streaming
@@ -54,11 +54,11 @@ brew install --cask whatsapp                    # WhatsApp - Chat app
 # Discontinued Casks -------------------------------------------------------------
 
 # Productivity 
-# -- Not using it anymore ---
+# -- Not using it anymore ------------------------------------------
 # brew install --cask obsidian                    # Obsidian - Note-taking app
 
 # Utilities
-# --- Discontinued in favor of betterdisplay ---
+# --- Discontinued in favor of betterdisplay -----------------------
 # brew install --cask monitorcontrol              # MonitorControl - Internal / External Monitor brightness and volume control
 
 # --- Discontinued because of macos tahoe spotlight improvements ---
@@ -83,6 +83,8 @@ brew install neofetch
 brew install htop
 brew install npm
 brew install inetutils
+brew install duckdb 
+brew install azure-cli
 
 # brew install make # installed by gawk
 

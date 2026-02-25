@@ -29,6 +29,11 @@ fi
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init bash)"
 fi
+
+# direnv — auto-activate project venvs on cd
+if command -v direnv >/dev/null 2>&1; then
+  eval "$(direnv hook bash)"
+fi
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 
 # Attach ble.sh to enable its editing features
@@ -44,9 +49,3 @@ if [ -f "$HOME/.bash_functions" ]; then
   source "$HOME/.bash_functions"  
 fi
 
-
-# downloaded datasets and dataformat ncbi cli utilities
-# from https://github.com/ncbi/datasets/releases
-# created user bin directory and added to PATH
-# removed from quarantine using xattr -d com.apple.quarantine datasets dataformat
-export PATH="$HOME/bin:$PATH"

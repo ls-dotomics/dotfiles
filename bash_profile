@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/bin:$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$HOME/.local/bin:/Library/TeX/texbin:$HOME/bin:$PATH"
 
 export LANG=en_US.UTF-8
 hash -r
