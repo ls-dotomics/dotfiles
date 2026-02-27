@@ -3,6 +3,12 @@ set -euo pipefail
 
 echo "🚀 Starting dotfiles setup..."
 
+# Require Apple Silicon
+if [[ "$(uname -m)" != "arm64" ]]; then
+    echo "❌ This setup only supports Apple Silicon Macs. Detected: $(uname -m)"
+    exit 1
+fi
+
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 INSTALL_DIR="$SCRIPT_DIR/macos-install"
@@ -28,8 +34,8 @@ bash "$INSTALL_DIR/05_git_setup.sh"
 echo "🐍 Step 6/7: Setting up Python with uv..."
 bash "$INSTALL_DIR/06_uv_setup.sh"
 
-echo "🐍 Step 7/7: Setting up Startship..."
-bash "$INSTALL_DIR/07_startship_setup.sh"
+echo "🌟 Step 7/7: Setting up Starship..."
+bash "$INSTALL_DIR/07_starship_setup.sh"
 
 echo "🎉 Dotfiles setup complete!"
 echo "Please restart your terminal or run 'source ~/.bash_profile' to apply changes."

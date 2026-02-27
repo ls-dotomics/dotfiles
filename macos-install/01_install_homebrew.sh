@@ -10,7 +10,7 @@ echo "🍺 Installing Homebrew..."
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Add Homebrew to shell profile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
 
 # Check if Homebrew is installed
 if ! command -v brew &> /dev/null; then

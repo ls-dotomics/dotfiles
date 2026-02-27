@@ -11,6 +11,7 @@ DOTFILES_DIR="$(dirname "$SCRIPT_DIR")"
 ln -sf "$DOTFILES_DIR/bash_profile" "$HOME/.bash_profile"
 ln -sf "$DOTFILES_DIR/bashrc" "$HOME/.bashrc"
 ln -sf "$DOTFILES_DIR/bash_aliases" "$HOME/.bash_aliases"
+ln -sf "$DOTFILES_DIR/bash_functions" "$HOME/.bash_functions"
 ln -sf "$DOTFILES_DIR/blerc" "$HOME/.blerc"
 # ln -sf "$DOTFILES_DIR/gitconfig" ~/.gitconfig
 

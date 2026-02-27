@@ -27,9 +27,6 @@ brew install --cask jordanbaird-ice             # Open Source Version of Bartend
 brew install --cask visual-studio-code
 brew install --cask cursor
 brew install --cask gcloud-cli
-brew install --cask google-cloud-sdk
-# brew install --cask r-app
-# brew install --cask rstudio 
 
 # Productivity
 brew install --cask 1password                   # 1Password - Password manager
@@ -37,13 +34,9 @@ brew install --cask notion                      # Notion - Note-taking app
 brew install --cask google-drive                # Google Drive - Cloud storage
 brew install --cask microsoft-office            # Microsoft Office - Office suite
 brew install --cask microsoft-auto-update       # Microsoft Auto Update - Auto update for Microsoft apps
-# brew install --cask onedrive                    # OneDrive - Cloud storage
-brew install --cask discord                     # Discord - Chat app
 brew install --cask granola                     # Granola - AI Notetaking
 brew install --cask claude                      # Claude - AI chatbot
 brew install --cask chatgpt                     # ChatGPT - AI chatbot
-# brew install --cask loom                        # Loom - Video recording
-brew install --cask nordvpn                     # NordVPN - VPN service
 brew install --cask zotero                      # Zotero - Reference manager
 
 # Personal Preferences
@@ -53,9 +46,14 @@ brew install --cask whatsapp                    # WhatsApp - Chat app
 
 # Discontinued Casks -------------------------------------------------------------
 
-# Productivity 
-# -- Not using it anymore ------------------------------------------
+# -- Not using them anymore ------------------------------------------
 # brew install --cask obsidian                    # Obsidian - Note-taking app
+# brew install --cask r-app
+# brew install --cask rstudio 
+# brew install --cask onedrive                    # OneDrive - Cloud storage
+# brew install --cask discord                     # Discord - Chat app
+# brew install --cask loom                        # Loom - Video recording
+# brew install --cask nordvpn                     # NordVPN - VPN service
 
 # Utilities
 # --- Discontinued in favor of betterdisplay -----------------------
@@ -64,6 +62,7 @@ brew install --cask whatsapp                    # WhatsApp - Chat app
 # --- Discontinued because of macos tahoe spotlight improvements ---
 # brew install --cask raycast                     # Raycast - Spotlight alternative                                             
 # brew install --cask maccy                       # Maccy - Clipboard manager 
+
 
 # Install Formulae -------------------------------------------------------------
 brew install git
@@ -79,12 +78,14 @@ brew install readline
 brew install gawk
 brew install starship
 brew install tmux
-brew install neofetch
+brew install fastfetch
 brew install htop
 brew install npm
 brew install inetutils
-brew install duckdb 
+brew install duckdb
 brew install azure-cli
+brew install direnv
+brew install uutils-coreutils
 
 # brew install make # installed by gawk
 
@@ -97,13 +98,3 @@ brew upgrade
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
-# Check if Homebrew Bash is in /etc/shells and set it as the default shell
-if [[ -f "/opt/homebrew/bin/bash" ]] && ! grep -q "^/opt/homebrew/bin/bash$" /etc/shells; then
-    echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells > /dev/null
-    echo "✓ Added /opt/homebrew/bin/bash to /etc/shells"
-fi
-
-chsh -s /opt/homebrew/bin/bash
-
-brew update
-brew upgrade
