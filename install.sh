@@ -3,6 +3,10 @@ set -euo pipefail
 
 echo "🚀 Starting dotfiles setup..."
 
+# Request sudo upfront and keep it alive throughout the script
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # Require Apple Silicon
 if [[ "$(uname -m)" != "arm64" ]]; then
     echo "❌ This setup only supports Apple Silicon Macs. Detected: $(uname -m)"

@@ -28,7 +28,6 @@ brew install --cask cursor
 brew install --cask gcloud-cli
 brew install --cask google-cloud-sdk
 brew install --cask ngrok
-brew install --cask xquartz
 
 # Productivity
 brew install --cask 1password                   # 1Password - Password manager
@@ -87,12 +86,16 @@ brew install starship
 brew install tmux
 brew install fastfetch
 brew install htop
-brew install npm
+brew install node
 brew install inetutils
 brew install duckdb
 brew install azure-cli
 brew install direnv
 brew install uutils-coreutils
+brew install awscli
+brew install bcftools
+brew install pandoc
+brew install speedtest
 
 # brew install make # installed by gawk
 
