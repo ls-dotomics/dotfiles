@@ -42,5 +42,8 @@ return {
     { key = "DownArrow", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
     { key = "UpArrow", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
     { key = "RightArrow", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
+
+    -- AZERTY: pipe character (Option+Shift+L)
+    { key = "l", mods = "ALT|SHIFT", action = act.SendString("|") },
   },
 }
