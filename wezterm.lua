@@ -34,13 +34,13 @@ return {
     { key = "0", mods = "CMD", action = act.ResetFontSize },
 
     -- Leader-based pane workflow, chosen for AZERTY comfort
-    { key = "s", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-    { key = "v", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-    { key = "c", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
+    { key = "v", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+    { key = "h", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+    { key = "t", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
 
-    { key = "h", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
-    { key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
-    { key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
-    { key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
+    { key = "LeftArrow", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
+    { key = "DownArrow", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
+    { key = "UpArrow", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
+    { key = "RightArrow", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
   },
 }
