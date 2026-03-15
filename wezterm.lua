@@ -18,6 +18,7 @@ return {
     bottom = 8,
   },
 
+  tab_max_width = 50,
   scrollback_lines = 5000,
   default_cursor_style = "BlinkingBar",
   max_fps = 120,
@@ -33,9 +34,22 @@ return {
     { key = "-", mods = "CMD", action = act.DecreaseFontSize },
     { key = "0", mods = "CMD", action = act.ResetFontSize },
 
+    -- Tab navigation (AZERTY-friendly)
+    { key = "LeftArrow", mods = "CMD|SHIFT", action = act.ActivateTabRelative(-1) },
+    { key = "RightArrow", mods = "CMD|SHIFT", action = act.ActivateTabRelative(1) },
+    { key = "1", mods = "CMD", action = act.ActivateTab(0) },
+    { key = "2", mods = "CMD", action = act.ActivateTab(1) },
+    { key = "3", mods = "CMD", action = act.ActivateTab(2) },
+    { key = "4", mods = "CMD", action = act.ActivateTab(3) },
+    { key = "5", mods = "CMD", action = act.ActivateTab(4) },
+    { key = "6", mods = "CMD", action = act.ActivateTab(5) },
+    { key = "7", mods = "CMD", action = act.ActivateTab(6) },
+    { key = "8", mods = "CMD", action = act.ActivateTab(7) },
+    { key = "9", mods = "CMD", action = act.ActivateTab(8) },
+
     -- Leader-based pane workflow, chosen for AZERTY comfort
-    { key = "v", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-    { key = "h", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+    { key = "h", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+    { key = "v", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { key = "t", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
 
     { key = "LeftArrow", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
