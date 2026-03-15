@@ -48,8 +48,8 @@ return {
     { key = "9", mods = "CMD", action = act.ActivateTab(8) },
 
     -- Leader-based pane workflow, chosen for AZERTY comfort
-    { key = "h", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
-    { key = "v", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+    { key = "v", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+    { key = "h", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { key = "t", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
 
     { key = "LeftArrow", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
@@ -59,5 +59,8 @@ return {
 
     -- AZERTY: pipe character (Option+Shift+L)
     { key = "l", mods = "ALT|SHIFT", action = act.SendString("|") },
+
+    -- AZERTY: tilde character (Option+N)
+    { key = "n", mods = "ALT", action = act.SendString("~") },
   },
 }
