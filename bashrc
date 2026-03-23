@@ -29,6 +29,7 @@ fi
 export STARSHIP_CONFIG="$HOME/.config/starship.toml"
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init bash)"
+  # Blank line before each prompt is handled by starship's add_newline
 fi
 
 # direnv — auto-activate project venvs on cd
@@ -49,3 +50,6 @@ if [ -f "$HOME/.bash_functions" ]; then
   source "$HOME/.bash_functions"  
 fi
 
+
+# source "/Users/lstrouk/stack/dotfiles/shell/init.sh"
+. "$HOME/.cargo/env"
