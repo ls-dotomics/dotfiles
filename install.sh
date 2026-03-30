@@ -20,32 +20,35 @@ INSTALL_DIR="$SCRIPT_DIR/macos-install"
 # Make all install scripts executable
 chmod +x "$INSTALL_DIR"/*.sh
 
-echo "📦 Step 1/9: Installing Homebrew..."
+echo "📦 Step 1/10: Installing Homebrew..."
 bash "$INSTALL_DIR/01_install_homebrew.sh"
 
-echo "🍺 Step 2/9: Installing Homebrew packages..."
+echo "🍺 Step 2/10: Installing Homebrew packages..."
 bash "$INSTALL_DIR/02_install_brew_formulae_and_casks.sh"
 
-echo "🛠️  Step 3/9: Installing utilities..."
+echo "🛠️  Step 3/10: Installing utilities (ble.sh, uv)..."
 bash "$INSTALL_DIR/03_install_utils.sh"
 
-echo "🔗 Step 4/9: Setting up dotfiles symlinks..."
+echo "🦀 Step 4/10: Installing Rust..."
+bash "$INSTALL_DIR/09_rust_setup.sh"
+
+echo "🔗 Step 5/10: Setting up dotfiles symlinks..."
 bash "$INSTALL_DIR/04_dotfiles_setup.sh"
 
-echo "👤 Step 5/9: Configuring Git..."
+echo "👤 Step 6/10: Configuring Git..."
 bash "$INSTALL_DIR/05_git_setup.sh"
 
-echo "🐍 Step 6/9: Setting up Python with uv..."
+echo "🐍 Step 7/10: Setting up Python with uv..."
 bash "$INSTALL_DIR/06_uv_setup.sh"
 
-echo "🌟 Step 7/9: Setting up Starship..."
+echo "🌟 Step 8/10: Setting up Starship..."
 bash "$INSTALL_DIR/07_starship_setup.sh"
 
-echo "🖥️  Step 8/9: Setting up WezTerm..."
+echo "🖥️  Step 9/10: Setting up WezTerm..."
 bash "$INSTALL_DIR/08_wezterm_setup.sh"
 
-echo "🦀 Step 9/9: Installing Rust..."
-bash "$INSTALL_DIR/09_rust_setup.sh"
+echo "🤖 Step 10/10: Installing Claude Code CLI..."
+bash "$INSTALL_DIR/10_claude_code_setup.sh"
 
 echo "🎉 Dotfiles setup complete!"
 echo "Please restart your terminal or run 'source ~/.bash_profile' to apply changes."

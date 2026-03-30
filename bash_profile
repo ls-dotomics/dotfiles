@@ -8,10 +8,10 @@ hash -r
 if [ -f "$HOME/.bashrc" ]; then
   source "$HOME/.bashrc"
 fi
-. "$HOME/.cargo/env"
-
-# Added by Antigravity
-export PATH="/Users/lstrouk/.antigravity/antigravity/bin:$PATH"
+# Cargo/Rust environment (guard against missing file on fresh installs)
+if [ -f "$HOME/.cargo/env" ]; then
+  . "$HOME/.cargo/env"
+fi
 
 # Added by Antigravity
 export PATH="/Users/lstrouk/.antigravity/antigravity/bin:$PATH"

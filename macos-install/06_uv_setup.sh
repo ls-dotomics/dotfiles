@@ -3,8 +3,8 @@ set -euo pipefail
 
 echo "🐍 Setting up Python with uv..."
 
-# Source bash profile to ensure uv is in PATH
-source ~/.bash_profile
+# Add uv to PATH directly (installed by 03_install_utils.sh)
+export PATH="$HOME/.local/bin:$PATH"
 
 # Install Python 3.12 using uv
 echo "📦 Installing Python 3.12..."
