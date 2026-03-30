@@ -96,6 +96,7 @@ brew install awscli
 brew install bcftools
 brew install pandoc
 brew install speedtest
+brew install kubectl
 
 # brew install make # installed by gawk
 
