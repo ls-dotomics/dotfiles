@@ -3,23 +3,9 @@
 
 add_newline = true
 
-format = """$directory$git_branch$git_status$gcloud$username$hostname$fill$time
-$character"""
-
 # Replace the '❯' symbol in the prompt with '➜'
 [character]
 success_symbol = '[➜](bold green)'
-
-# Fill space between left modules and right-aligned time
-[fill]
-symbol = ' '
-
-# Show current time, right-justified on the info line
-[time]
-disabled = false
-format = '[$time]($style)'
-time_format = '%H:%M'
-style = 'bold dimmed white'
 
 # Disable the package module, hiding it from the prompt completely
 [package]
