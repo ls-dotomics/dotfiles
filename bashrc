@@ -21,7 +21,8 @@ if command -v uutils-coreutils >/dev/null 2>&1; then
 fi
 
 # Load ble.sh without attaching immediately
-if [ -f "${HOME}/.local/share/blesh/ble.sh" ]; then
+# (Skip in Warp — its input handling conflicts with ble.sh and causes prompt duplication)
+if [[ "$TERM_PROGRAM" != "WarpTerminal" ]] && [ -f "${HOME}/.local/share/blesh/ble.sh" ]; then
   source "${HOME}/.local/share/blesh/ble.sh" --noattach
 fi
 
@@ -37,8 +38,8 @@ if command -v direnv >/dev/null 2>&1; then
   eval "$(direnv hook bash)"
 fi
 
-# Attach ble.sh to enable its editing features
-[[ ${BLE_VERSION-} ]] && ble-attach
+# Attach ble.sh to enable its editing features (skip in Warp)
+[[ "$TERM_PROGRAM" != "WarpTerminal" ]] && [[ ${BLE_VERSION-} ]] && ble-attach
 
 # Source aliases
 if [ -f "$HOME/.bash_aliases" ]; then
@@ -53,3 +54,6 @@ fi
 
 # source "/Users/lstrouk/stack/dotfiles/shell/init.sh"
 . "$HOME/.cargo/env"
+
+# HGI CLI
+export PATH="/Users/lstrouk/.hgi/bin:$PATH"
